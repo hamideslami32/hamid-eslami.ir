@@ -10,20 +10,16 @@ const Hero = () => (
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
+          Hi there, I'm <GradientText>Hamid</GradientText> 👋
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          I'm a self-taught Front-End Software Engineer with 7+ years of
+          experience. I specialize in HTML5, CSS3, and Javascript, including
+          Typescript. I'm skilled in popular frameworks like React, Vue, and
+          Next.js, and I'm proficient in tools like Git and Webpack. My goal is
+          to make valuable contributions to front-end development projects.
         </>
       }
       avatar={
@@ -36,7 +32,7 @@ const Hero = () => (
       }
       socialButtons={
         <>
-          <a href="/">
+          {/* <a href="/">
             <HeroSocial
               src="/assets/images/twitter-icon.png"
               alt="Twitter icon"
@@ -47,19 +43,19 @@ const Hero = () => (
               src="/assets/images/facebook-icon.png"
               alt="Facebook icon"
             />
-          </a>
-          <a href="/">
+          </a> */}
+          <a href="https://www.linkedin.com/in/hamid-eslami/" target="blank">
             <HeroSocial
               src="/assets/images/linkedin-icon.png"
               alt="Linkedin icon"
             />
           </a>
-          <a href="/">
+          {/* <a href="/">
             <HeroSocial
               src="/assets/images/youtube-icon.png"
               alt="Youtube icon"
             />
-          </a>
+          </a> */}
         </>
       }
     />

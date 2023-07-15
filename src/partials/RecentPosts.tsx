@@ -19,7 +19,7 @@ const RecentPosts = (props: IRecentPostsProps) => (
         </div>
 
         <div className="text-sm">
-          <a href="/posts/">View all Posts →</a>
+          <a href="/articles/">View all Posts →</a>
         </div>
       </div>
     }

@@ -28,10 +28,7 @@ jobs:
         run: npm ci
       
       - name: Build project
-        run: npm run generate
-      
-      - name: Rename dist folder to html
-        run: mv dist html
+        run: npm run build
       
       - name: Copy files via SSH
         uses: appleboy/scp-action@v0.3.0
@@ -39,5 +36,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           password: ${{ secrets.PASSWORD }}
-          source: "html"
-          target: "app/hamid-eslami.ir/"
+          source: "dist"
+          target: "/var/www/html"
